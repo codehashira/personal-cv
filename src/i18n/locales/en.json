@@ -1,0 +1,144 @@
+{
+  "app": {
+    "title": "CV | Artem Smirnov",
+    "language": "English"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "experience": "Experience",
+    "education": "Education",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "theme": {
+    "light": "Light Mode",
+    "dark": "Dark Mode"
+  },
+  "header": {
+    "name": "Artem Smirnov",
+    "title": "Full-Stack Software Developer",
+    "intro": "Experienced developer with a passion for creating efficient, scalable, and user-friendly applications."
+  },
+  "about": {
+    "title": "About Me",
+    "content": "I am a full-stack software developer with expertise in modern web technologies. I enjoy solving complex problems and building applications that provide real value to users. With a strong foundation in both frontend and backend development, I can handle projects from concept to deployment."
+  },
+  "experience": {
+    "title": "Work Experience",
+    "jobs": [
+      {
+        "title": "Senior Full-Stack Developer",
+        "company": "Tech Company",
+        "period": "2022 - Present",
+        "description": "Leading development of web applications using modern JavaScript frameworks. Implementing microservices architecture and optimizing application performance.",
+        "technologies": "Vue.js, Node.js, TypeScript, MongoDB"
+      },
+      {
+        "title": "Full-Stack Developer",
+        "company": "Digital Agency",
+        "period": "2019 - 2022",
+        "description": "Developed responsive web applications for various clients. Collaborated with design and product teams to implement new features and improve user experience.",
+        "technologies": "React, Express.js, PostgreSQL, Docker"
+      },
+      {
+        "title": "Frontend Developer",
+        "company": "Startup",
+        "period": "2017 - 2019",
+        "description": "Built interactive user interfaces and implemented responsive designs. Worked on optimizing application performance and improving code quality.",
+        "technologies": "JavaScript, HTML5, CSS3, Angular"
+      }
+    ]
+  },
+  "education": {
+    "title": "Education",
+    "degrees": [
+      {
+        "degree": "Master of Computer Science",
+        "institution": "University Name",
+        "period": "2015 - 2017",
+        "description": "Specialized in Software Engineering and Web Technologies."
+      },
+      {
+        "degree": "Bachelor of Computer Science",
+        "institution": "University Name",
+        "period": "2011 - 2015",
+        "description": "Focused on Programming and Database Systems."
+      }
+    ]
+  },
+  "skills": {
+    "title": "Skills",
+    "technical": {
+      "title": "Technical Skills",
+      "items": [
+        "JavaScript/TypeScript",
+        "Vue.js/React/Angular",
+        "Node.js/Express",
+        "HTML5/CSS3/SASS",
+        "MongoDB/PostgreSQL",
+        "RESTful APIs/GraphQL",
+        "Git/GitHub",
+        "Docker/Kubernetes",
+        "AWS/Azure",
+        "CI/CD Pipelines"
+      ]
+    },
+    "languages": {
+      "title": "Languages",
+      "items": [
+        {"name": "English", "level": "Fluent"},
+        {"name": "Russian", "level": "Native"},
+        {"name": "German", "level": "Intermediate"}
+      ]
+    },
+    "soft": {
+      "title": "Soft Skills",
+      "items": [
+        "Problem Solving",
+        "Team Collaboration",
+        "Project Management",
+        "Communication",
+        "Time Management"
+      ]
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "items": [
+      {
+        "title": "E-commerce Platform",
+        "description": "A full-featured online shopping platform with user authentication, product management, and payment processing.",
+        "technologies": "Vue.js, Node.js, MongoDB, Stripe API",
+        "link": "#"
+      },
+      {
+        "title": "Task Management System",
+        "description": "A collaborative task management application with real-time updates and team collaboration features.",
+        "technologies": "React, Express.js, Socket.io, PostgreSQL",
+        "link": "#"
+      },
+      {
+        "title": "Portfolio Website",
+        "description": "A responsive portfolio website showcasing projects and skills with a modern design.",
+        "technologies": "Vue.js, SCSS, Netlify",
+        "link": "#"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact Me",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message",
+    "success": "Message sent successfully!",
+    "error": "There was an error sending your message. Please try again.",
+    "info": {
+      "name": "Artem Smirnov",
+      "email": "smr.artm@gmail.com",
+      "location": "Location placeholder"
+    }
+  }
+}
