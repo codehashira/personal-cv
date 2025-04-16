@@ -23,7 +23,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
-*.zip
+cv-website-project.zip
+cv-website-source.zip
 
 
 # Environment files

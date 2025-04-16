@@ -30,7 +30,7 @@ import { useThemeStore } from '../stores/theme'
 import { useI18n } from 'vue-i18n'
 
 const themeStore = useThemeStore()
-const { t } = useI18n()
+useI18n()
 </script>
 
 <style scoped>

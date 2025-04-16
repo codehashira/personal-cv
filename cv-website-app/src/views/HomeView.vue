@@ -14,17 +14,7 @@
           </div>
           <div class="hero-image">
             <div class="profile-placeholder">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="100"
-                height="100"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="1"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
+              <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                 <circle cx="12" cy="7" r="4"></circle>
               </svg>
@@ -90,17 +80,16 @@
               </li>
             </ul>
           </div>
-
+          
           <div class="card skills-languages">
             <h3>{{ $t('skills.languages.title') }}</h3>
             <ul class="skills-list">
               <li v-for="(lang, index) in languages" :key="index">
-                <strong>{{ lang.name }}</strong
-                >: {{ lang.level }}
+                <strong>{{ lang.name }}</strong>: {{ lang.level }}
               </li>
             </ul>
           </div>
-
+          
           <div class="card skills-soft">
             <h3>{{ $t('skills.soft.title') }}</h3>
             <ul class="skills-list">
@@ -137,49 +126,53 @@
             <h3>{{ $t('contact.info.name') }}</h3>
             <p>{{ $t('contact.info.email') }}</p>
           </div>
-
+          
           <div class="contact-form card">
             <form @submit.prevent="submitContactForm">
               <div class="form-group">
                 <label for="name" class="form-label">{{ $t('contact.name') }}</label>
-                <input
-                  type="text"
-                  id="name"
-                  v-model="contactStore.name"
-                  class="form-input"
+                <input 
+                  type="text" 
+                  id="name" 
+                  v-model="contactStore.name" 
+                  class="form-input" 
                   required
-                />
+                >
               </div>
-
+              
               <div class="form-group">
                 <label for="email" class="form-label">{{ $t('contact.email') }}</label>
-                <input
-                  type="email"
-                  id="email"
-                  v-model="contactStore.email"
-                  class="form-input"
+                <input 
+                  type="email" 
+                  id="email" 
+                  v-model="contactStore.email" 
+                  class="form-input" 
                   required
-                />
+                >
               </div>
-
+              
               <div class="form-group">
                 <label for="message" class="form-label">{{ $t('contact.message') }}</label>
-                <textarea
-                  id="message"
-                  v-model="contactStore.message"
-                  class="form-input form-textarea"
+                <textarea 
+                  id="message" 
+                  v-model="contactStore.message" 
+                  class="form-input form-textarea" 
                   required
                 ></textarea>
               </div>
-
-              <button type="submit" class="btn" :disabled="contactStore.isSubmitting">
+              
+              <button 
+                type="submit" 
+                class="btn" 
+                :disabled="contactStore.isSubmitting"
+              >
                 {{ $t('contact.send') }}
               </button>
-
+              
               <div v-if="contactStore.isSuccess" class="form-success">
                 {{ $t('contact.success') }}
               </div>
-
+              
               <div v-if="contactStore.isError" class="form-error">
                 {{ $t('contact.error') }}
               </div>
@@ -201,55 +194,55 @@ const { t } = useI18n()
 
 // Fix TypeScript errors by properly typing the translated content
 interface Job {
-  title: string
-  company: string
-  period: string
-  description: string
-  technologies: string
+  title: string;
+  company: string;
+  period: string;
+  description: string;
+  technologies: string;
 }
 
 interface Degree {
-  degree: string
-  institution: string
-  period: string
-  description: string
+  degree: string;
+  institution: string;
+  period: string;
+  description: string;
 }
 
 interface Language {
-  name: string
-  level: string
+  name: string;
+  level: string;
 }
 
 interface Project {
-  title: string
-  description: string
-  technologies: string
-  link: string
+  title: string;
+  description: string;
+  technologies: string;
+  link: string;
 }
 
 const jobs = computed<Job[]>(() => {
-  return t('experience.jobs') as unknown as Job[]
-})
+  return t('experience.jobs') as unknown as Job[];
+});
 
 const degrees = computed<Degree[]>(() => {
-  return t('education.degrees') as unknown as Degree[]
-})
+  return t('education.degrees') as unknown as Degree[];
+});
 
 const technicalSkills = computed<string[]>(() => {
-  return t('skills.technical.items') as unknown as string[]
-})
+  return t('skills.technical.items') as unknown as string[];
+});
 
 const languages = computed<Language[]>(() => {
-  return t('skills.languages.items') as unknown as Language[]
-})
+  return t('skills.languages.items') as unknown as Language[];
+});
 
 const softSkills = computed<string[]>(() => {
-  return t('skills.soft.items') as unknown as string[]
-})
+  return t('skills.soft.items') as unknown as string[];
+});
 
 const projects = computed<Project[]>(() => {
-  return t('projects.items') as unknown as Project[]
-})
+  return t('projects.items') as unknown as Project[];
+});
 
 function submitContactForm() {
   contactStore.submitForm()
@@ -310,35 +303,29 @@ function submitContactForm() {
   box-shadow: var(--shadow);
 }
 
-.experience-list,
-.education-list,
-.projects-list {
+.experience-list, .education-list, .projects-list {
   display: grid;
   gap: 20px;
 }
 
-.experience-header,
-.education-header {
+.experience-header, .education-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
 }
 
-.experience-period,
-.education-period {
+.experience-period, .education-period {
   color: var(--color-text-light);
   font-size: 0.9rem;
 }
 
-.experience-company,
-.education-institution {
+.experience-company, .education-institution {
   font-weight: 500;
   margin-bottom: 10px;
 }
 
-.experience-tech,
-.project-tech {
+.experience-tech, .project-tech {
   margin-top: 15px;
   font-size: 0.9rem;
 }
@@ -389,15 +376,15 @@ function submitContactForm() {
     flex-direction: column;
     text-align: center;
   }
-
+  
   .hero-text {
     margin-bottom: 40px;
   }
-
+  
   .hero-text h1 {
     font-size: 2rem;
   }
-
+  
   .contact-container {
     grid-template-columns: 1fr;
   }
@@ -408,7 +395,7 @@ function submitContactForm() {
     display: block;
     margin: 10px 0;
   }
-
+  
   .skills-container {
     grid-template-columns: 1fr;
   }
