@@ -88,9 +88,9 @@
     "languages": {
       "title": "Languages",
       "items": [
-        {"name": "English", "level": "Fluent"},
-        {"name": "Russian", "level": "Native"},
-        {"name": "German", "level": "Intermediate"}
+        { "name": "English", "level": "Fluent" },
+        { "name": "Russian", "level": "Native" },
+        { "name": "German", "level": "Intermediate" }
       ]
     },
     "soft": {
